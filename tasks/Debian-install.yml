@@ -1,4 +1,10 @@
 ---
+- name: Install wget
+  apt:
+    name: wget
+    state: latest
+    update_cache: yes
+
 - name: Download .deb package
   apt:
     deb: "{{ repo_url  }}" 
