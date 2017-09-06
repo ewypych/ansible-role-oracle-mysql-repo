@@ -1,0 +1,25 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: ewypych
+  description: Oracle MySQL Repository installation.
+  license: "MIT"
+  min_ansible_version: 2.0
+  platforms:
+    - name: EL
+      versions:
+      - 5
+      - 6
+      - 7
+    - name: Ubuntu
+      versions:
+      - all
+    - name: Debian
+      versions:
+      - all
+  galaxy_tags:
+    - mysql
+    - oracle
+    - database
+    - repository

@@ -1,0 +1,9 @@
+---
+# vars config
+- name: Include RedHat variables
+  include_vars: RedHat.yml
+  when: ansible_os_family == "RedHat"
+
+- name: Include Debian variables
+  include_vars: Debian.yml
+  when: ansible_os_family == "Debian" or ansible_os_family == "Ubuntu"

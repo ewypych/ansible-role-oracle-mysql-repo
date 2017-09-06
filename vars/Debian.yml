@@ -1,0 +1,3 @@
+---
+# vars for Debian based distributions
+__distro_package: mysql-apt-config_0.8.7-1_all.deb 

@@ -1,0 +1,19 @@
+---
+- name: Install Oracle MySQL repository
+  yum:
+    name: "{{ repo_url }}"
+    state: present
+
+- name: Install yum-config-manager for repo managing
+  yum:
+    name: yum-utils
+    state: present
+  when: mysql_version != "57"
+
+- name: Disable an unnecessary repo
+  command: 'yum-config-manager --disable mysql57-community'
+  when: mysql_version != "57"
+
+- name: Enable an aproprietary repo
+  command: 'yum-config-manager --enable mysql{{ mysql_version }}-community'
+  when: mysql_version != "57"

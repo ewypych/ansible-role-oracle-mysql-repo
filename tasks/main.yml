@@ -1,0 +1,12 @@
+---
+# tasks file for ansible-role-oracle-mysql-repo
+
+- include: variables.yml
+
+- include: RedHat-install.yml
+  when: ansible_os_family == 'RedHat'
+  static: no
+
+- include: Debian-install.yml
+  when: ansible_os_family == 'Debian' or ansible_os_family == 'Ubuntu'
+  static: no

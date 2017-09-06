@@ -1,0 +1,9 @@
+---
+# default repository URL
+repo_url: http://repo.mysql.com/{{ __distro_package  }}
+
+# default MySQL version - you can choose one of the following versions:
+# 5.5, 5.6, 5.7, 8.0
+# type version WITHOUT the dot
+# Works only with RedHat distributions
+mysql_version: 57
