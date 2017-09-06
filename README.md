@@ -1,4 +1,4 @@
-Ansible Role: Oracle MySQL Repository
+Ansible Role: Oracle MySQL Repository [![Build Status](https://travis-ci.org/ewypych/ansible-role-oracle-mysql-repo.png?branch=master)](https://travis-ci.org/ewypych/ansible-role-oracle-mysql-repo)
 =========
 
 This role can be used to install the Oracle MySQL Repository.
